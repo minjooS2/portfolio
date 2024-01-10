@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="KO">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
+
+  <script src="http://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/vendor/jquery-1.10.2.min.js"></script>
+  <script src="./js/jquery.easing.1.3.min.js"></script>
+  <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script> <!-- 제이쿼리확장라이브러리 -->
+  <script src="./js/jquery.Floater.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/jquery.mousewheel.min.js"></script>
+
+
+
+  <script src="js/jquery.Floater.js"></script>
+  <script src="js/jquery.easing.1.3.min.js"></script>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+  <script src="https://kit.fontawesome.com/b51af6ee40.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <nav class="cf">
+    <ul class="nav cf">
+      <li class="cf active">
+        <a class="mainD" href="#">
+          <span class="dot"></span>
+        </a>
+        <div class="navText">main</div>
+      </li>
+      <li class="cf">
+        <a class="profileD" href="#profile">
+          <span class="dot"></span>
+        </a>
+        <div class="navText">profile</div>
+      </li>
+      <li class="cf">
+        <a class="webD" href="#webProject">
+          <span class="dot"></span>
+        </a>
+        <div class="navText">web</div>
+      </li>
+      <li class="cf">
+        <a class="mobileD" href="#mobileProject">
+          <span class="dot"></span>
+        </a>
+        <div class="navText">mobile</div>
+      </li>
+      <li class="cf">
+        <a class="designD" href="#designProject">
+          <span class="dot"></span>
+        </a>
+        <div class="navText">design</div>
+      </li>
+      <li class="cf">
+        <a class="contactD" href="#contact">
+          <span class="dot"></span>
+        </a>
+        <div class="navText">contact</div>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div>
+
+    <div id="intro" class="page">
+      <div id="artboard">
+        <img src="./img/ping_orange_bg.png" class="ping1" alt="ping1">
+        <img src="./img/ping_orange_bg.png" class="ping2" alt="ping2">
+        <img src="./img/ping_orange_bg.png" class="ping3" alt="ping3">
+  
+        <img src="./img/design_orange_bg.png" class="pizzadesign" alt="design">
+        <img src="./img/cursor.png" class="cursordesign" alt="design">
+      </div>
+    </div>
+  
+    <div id="profile" class="page">
+      <div class="profile">
+        <div class="leftT cf">
+          <img src="./img/ping_orange.png" width="180" height="220" alt="profile">
+          <div class="profile_text">
+            <h1>안녕하세요! <br> 신입 <b>웹디자이너 심민주</b>입니다.</h1>
+            <p>quasi error reprehenderit id et voluptatibus iure molestiae, est accusamus sapiente animi amet atque exercitationem!</p>
+          </div>
+        </div>
+        <div class="rightB cf">
+          <div class="career">
+            <ul>
+              <li>EDUCATION</li>
+              <li>· <span>2015.03 ~ 2019.09</span>차의과학대 의료홍보미디어학과</li>
+              <li>· <span>2019.09 ~ 2019.12</span>연세IT미래교육원 UI/UX디자인</li>
+              <li>· <span>2023.08 ~ 2024.01</span>연세IT미래교육원 UI/UX디자인과프론트엔드</li>
+            </ul>
+            <ul>
+              <li>CAREER</li>
+              <li>· <span>2020.01 ~ 2022.11</span>디자인파크 (웹매뉴얼 제작/매뉴얼 디자인)</li>
+              <li>· <span>2023.02 ~ 2023.07</span>케이모먼트 (상세페이지 외주)</li>
+            </ul>
+            <ul>
+              <li>CERTIFICATE</li>
+              <li>· <span>2019.09</span>GTQ1급</li>
+              <li>· <span>2020.02</span>GTQi1급</li>
+              <li>· <span>2020.02</span>웹디자인기능사</li>
+              <li>· <span>2023.12</span>컴퓨터그래픽스운용기능사</li>
+            </ul>
+          </div>
+          <div class="skills cf">
+            <ul>
+              <li>
+                <img src="./img/illust.png" alt="">
+                <div>
+                  <span class="en progress_tit">Illustrator</span>
+                  <div class="en progress_cnt">
+                    <span id="illust_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="illust_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/Indesign.png" alt="">
+                <div>
+                  <span class="en progress_tit">Indesign</span>
+                  <div class="en progress_cnt">
+                    <span id="indesign_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="indesign_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/Photoshop.png" alt="">
+                <div>
+                  <span class="en progress_tit">Photoshop</span>
+                  <div class="en progress_cnt">
+                    <span id="photoshop_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="photoshop_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/figma.png" alt="">
+                <div>
+                  <span class="en progress_tit">Figma</span>
+                  <div class="en progress_cnt">
+                    <span id="figma_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="figma_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/html5.png" alt="">
+                <div>
+                  <span class="en progress_tit">HTML5</span>
+                  <div class="en progress_cnt">
+                    <span id="html_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="html_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/CSS3.png" alt="">
+                <div>
+                  <span class="en progress_tit">CSS3</span>
+                  <div class="en progress_cnt">
+                    <span id="css_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="css_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jquery.png" alt="">
+                <div>
+                  <span class="en progress_tit">jquery</span>
+                  <div class="en progress_cnt">
+                    <span id="jquery_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="jquery_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/bootstrap_logo.png" alt="">
+                <div>
+                  <span class="en progress_tit">Bootstrap</span>
+                  <div class="en progress_cnt">
+                    <span id="bootstrap_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="bootstrap_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jquery.png" alt="">
+                <div>
+                  <span class="en progress_tit">CSS3</span>
+                  <div class="en progress_cnt">
+                    <span id="jquery_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="jquery_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/github.png" alt="">
+                <div>
+                  <span class="en progress_tit">Github</span>
+                  <div class="en progress_cnt">
+                    <span id="git_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="git_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/React.png" alt="">
+                <div>
+                  <span class="en progress_tit">React</span>
+                  <div class="en progress_cnt">
+                    <span id="react_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="react_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jquery.png" alt="">
+                <div>
+                  <span class="en progress_tit">jquery</span>
+                  <div class="en progress_cnt">
+                    <span id="jquery_cnt">0</span>
+                  </div>
+                  <div class="progress">
+                    <div id="jquery_bar" class="bar"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div id="webProject" class="page">
+      <div id="webslide" class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gonggan webslidecont">
+            <h1>Only CSS</h1>
+            <div class="cf">
+              <div class="frame">
+                <a href="http://zoolionn22.dothome.co.kr/project01_css/" target="_blank">
+                  <img src="img/gonggan.png" alt="gonggan">
+                </a>
+              </div>
+              <div class="workInfo">
+                <h1>PROJECT. &nbsp;공간조명</h1>
+
+                <p class="titleinfo"> CSS만을 이용하여 제작한 조명 쇼핑몰 사이트 입니다.<br>
+                간단한 슬라이드 배너와 탭메뉴를 구현하였고,<br>
+                로고의 색감을 고려, 골드톤으로 배색하였습니다.</p>
+
+
+                <ul class="badges cf">
+                  <li>기간 : 7일</li>
+                  <li>기여 : 100%</li>
+                  <li>웹표준준수</li>
+                </ul>
+
+                <h2>• &nbsp;사용 언어 / 툴</h2>
+                <p class="toolinfo">HTML5, CSS3, Visual Studio Code<br>
+                PhotoShop, Illustrator</p>
+
+                <h2>• &nbsp;호환 브라우저</h2>
+                <p class="toolinfo">Chrome, Firefox, Edge, IE</p>
+
+                <h2>• &nbsp;사이트맵</h2>
+                <ul class="sitemap cf">
+                  <li><a href="http://zoolionn22.dothome.co.kr/project01_css/" target="_blank">메인</a></li>
+                  <li><a href="http://zoolionn22.dothome.co.kr/project02_jQuery/sub1-1.html" target="_blank">서브1</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide teacher webslidecont">
+            <h1>jQuery</h1>
+            <div class="cf">
+              <div class="frame">
+                <a href="http://zoolionn22.dothome.co.kr/project02_jQuery/" target="_blank">
+                  <img src="img/korean_teacher.png" alt="korean_teacher">
+                </a>
+              </div>
+              <div class="workInfo">
+                <h1>PROJECT. &nbsp;한국교직원공제</h1>
+
+                <p class="titleinfo"> jQuery를 이용한 금융 사이트 입니다.<br>
+                기존 사이트를 최신 금융 사이트 트렌드에 맞게<br>
+                새롭게 리디자인 하였습니다.</p>
+
+
+                <ul class="badges cf">
+                  <li>기간 : 7일</li>
+                  <li>기여 : 100%</li>
+                  <li>웹표준준수</li>
+                </ul>
+
+                <h2>• &nbsp;사용 언어 / 툴</h2>
+                <p class="toolinfo">HTML5, CSS3, jQuery, Visual Studio Code<br>
+                PhotoShop, Illustrator</p>
+
+
+                <h2>• &nbsp;호환 브라우저</h2>
+                <p class="toolinfo">Chrome, Firefox, Edge, IE</p>
+
+
+                <h2>• &nbsp;사이트맵</h2>
+                <ul class="sitemap cf">
+                  <li><a href="http://zoolionn22.dothome.co.kr/project02_jquery/" target="_blank">메인</a></li>
+                  <li><a href="http://zoolionn22.dothome.co.kr/project02_jQuery/sub1-1.html" target="_blank">서브1</a>
+                  </li>
+                  <li><a href="http://zoolionn22.dothome.co.kr/project02_jQuery/sub2-1.html" target="_blank">서브2</a>
+                  </li>
+                  <li><a href="http://zoolionn22.dothome.co.kr/project02_jQuery/sub_customer-1.html" target="_blank">서브3</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide yonsai webslidecont">
+            <h1>Responsive Web</h1>
+            <div class="cf">
+              <div class="frame">
+                <a href="https://minjoos2.github.io/yonsai/" target="_blank">
+                  <img src="img/yonsai.png" alt="yonsai">
+                </a>
+              </div>
+              <div class="workInfo">
+                <h1>PROJECT. &nbsp;연세IT미래교육원</h1>
+
+                <p class="titleinfo"> 반응형으로 디자인한 교육 기관 사이트 입니다.<br> Flex와 Grid, 미디어 쿼리를 이용하여
+                <br> 웹, 태블릿, 모바일에서 구현될 수 있도록 하였습니다.
+                </p>
+
+
+                <ul class="badges cf">
+                  <li>기간 : 7일</li>
+                  <li>기여 : 100%</li>
+                  <li>웹표준준수</li>
+                </ul>
+
+                <h2>• &nbsp;사용 언어 / 툴</h2>
+                <p class="toolinfo">HTML5, CSS3, jQuery, Visual Studio Code<br>
+                PhotoShop, Illustrator</p>
+
+
+                <h2>• &nbsp;호환 브라우저</h2>
+                <p class="toolinfo">Chrome, Firefox, Edge, IE</p>
+
+
+                <h2>• &nbsp;사이트맵</h2>
+                <ul class="sitemap cf">
+                  <li><a href="https://minjoos2.github.io/yonsai/" target="_blank">메인</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination1"></div>
+  
+        <!-- Add Arrows -->
+        <div class="swiper-button-next next1"></div>
+        <div class="swiper-button-prev prev1"></div>
+      </div>
+    </div>
+  
+    <div id="mobileProject" class="page">
+      <div id="mobileslide" class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide skmagic mobileslidecont">
+            <h1>React</h1>
+            <div class="cf">
+              <div class="frame">
+                <a href="https://minjoos2.github.io/duckmul/" target="_blank">
+                  <img src="img/duckmul.png" alt="skmagic">
+                </a>
+              </div>
+              <div class="workInfo">
+                <h1>PROJECT. &nbsp;덕물단지</h1>
+
+                <p class="titleinfo"> 리액트와 부트스트랩을 이용한 모바일 페이지입니다.<br>
+                기획부터 제작까지 사이트가 만들어지는 과정을<br>
+                직접 경험해볼 수 있어 뜻깊었던 프로젝트입니다.<br>
+
+                <ul class="badges cf">
+                  <li>기간 : 10일</li>
+                  <li>기여 : 100%</li>
+                  <li>웹표준준수</li>
+                </ul>
+
+                <h2>• &nbsp;사용 언어 / 툴</h2>
+                <p class="toolinfo">React, Bootstrap, Visual Studio Code<br>
+                PhotoShop, Illustrator</p>
+
+                <h2>• &nbsp;호환 브라우저</h2>
+                <p class="toolinfo">Chrome, Firefox, Edge, IE</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide skmagic mobileslidecont">
+            <h1>Mobile Manual</h1>
+            <div class="cf">
+              <div class="frame">
+                <a href="https://qr.skmagic.com/2019/model/MMC/MMC145CR1EIV/Manual.htm#contents-1" target="_blank">
+                  <img src="img/skmagic.png" alt="skmagic">
+                </a>
+              </div>
+              <div class="workInfo">
+                <h1>PROJECT. &nbsp;SK매직 매뉴얼</h1>
+
+                <p class="titleinfo"> 재직 당시 유지, 보수를 맡았던 매뉴얼 사이트 입니다.<br>
+                전반적인 제품 일러스트 드로잉과 간단한 HTML, <br>
+                CSS 코드 수정을 담당하였습니다.<br>
+
+                <ul class="badges cf">
+                  <li>기간 : 5일</li>
+                  <li>기여 : 70%</li>
+                  <li>웹표준준수</li>
+                </ul>
+
+                <h2>• &nbsp;사용 언어 / 툴</h2>
+                <p class="toolinfo">HTML5, CSS3, Visual Studio Code<br>
+                PhotoShop, Illustrator</p>
+
+                <h2>• &nbsp;호환 브라우저</h2>
+                <p class="toolinfo">Chrome, Firefox, Edge, IE</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide samsung mobileslidecont">
+            <h1>Mobile Manual</h1>
+            <div class="cf">
+              <div class="frame">
+                <a href="https://downloadcenter.samsung.com/content/PM/202312/20231213131010816/KO/WEB_MO22A7797CWR_KO_231212/2019/model/Qooker/MO22A7797CWR/Manual.html" target="_blank">
+                  <img src="img/samsung.png" alt="samsung">
+                </a>
+              </div>
+              <div class="workInfo">
+                <h1>PROJECT. &nbsp;삼성 매뉴얼</h1>
+
+                <p class="titleinfo"> 재직 당시 유지, 보수를 맡았던 매뉴얼 사이트 입니다.<br>
+                외부 코드를 자사 스타일에 맞게 변경하는 작업에서 <br>
+                HTML, CSS 코드 수정, 일러스트를 담당하였습니다.<br>
+
+                <ul class="badges cf">
+                  <li>기간 : 3일</li>
+                  <li>기여 : 70%</li>
+                  <li>웹표준준수</li>
+                </ul>
+
+                <h2>• &nbsp;사용 언어 / 툴</h2>
+                <p class="toolinfo">HTML5, CSS3, Visual Studio Code<br>
+                PhotoShop, Illustrator</p>
+
+                <h2>• &nbsp;호환 브라우저</h2>
+                <p class="toolinfo">Chrome, Firefox, Edge, IE</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+  
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination1"></div>
+  
+        <!-- Add Arrows -->
+        <div class="swiper-button-next next1"></div>
+        <div class="swiper-button-prev prev1"></div>
+      </div>
+    </div>
+  
+  
+    <div id="designProject" class="page">
+
+      <div id="namsung" class="designModal">
+        <div>
+          <img src="./img/namsung_900x900.jpg" alt="namsung">
+          <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <div id="pizza" class="designModal">
+        <div>
+          <img src="./img/pizza 900x900.jpg" alt="pizza">
+          <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <div id="game" class="designModal">
+        <div class="cf">
+          <ul class="cf">
+            <li><img src="./img/cardnews01.jpg" alt="card01"></li>
+            <li><img src="./img/cardnews02.jpg" alt="card02"></li>
+            <li><img src="./img/cardnews03.jpg" alt="card03"></li>
+            <li><img src="./img/cardnews04.jpg" alt="card04"></li>
+            <li><img src="./img/cardnews06.jpg" alt="card06"></li>
+            <li><img src="./img/cardnews07.jpg" alt="card07"></li>
+            <li><img src="./img/cardnews08.jpg" alt="card08"></li>
+            <li><img src="./img/cardnews09.jpg" alt="card09"></li>
+            <li><img src="./img/cardnews10.jpg" alt="card010"></li>
+            <li><img src="./img/cardnews11.jpg" alt="card011"></li>
+          </ul>
+        </div>
+        <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div id="pillow" class="designModal">
+        <div class="cf">
+          <img src="./img/pillow_detail.jpg" alt="pillow_detail">
+          <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+      </div>
+
+      <div id="brush" class="designModal">
+        <div class="cf">
+          <img src="./img/brush_detail.jpg" alt="brush_detail">
+          <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+      </div>
+  
+
+  
+      <div id="designslide" class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide banner designslidecont">
+            <h1>Banner/Card Design</h1>
+            <p>포트폴리오 내 모든 웹사이트의 배너들은 제가 직접 제작한 배너들입니다. <br> 포토샵, 일러스트, 피그마를 활용하여 다양한 비율과 용도의 배너/카드뉴스 제작이 가능합니다.</p>
+            <div class="cf">
+              <ul class="cf">
+                <li><img src="./img/namsung_900x900.jpg" alt="namsung" class="namsung"></li>
+                <li><img src="./img/pizza 900x900.jpg" alt="pizza" class="pizza"></li>
+                <li><img src="./img/cardnews01.jpg" alt="cardnews01" class="game"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide banner designslidecont">
+            <h1>Detail Page</h1>
+            <p>포트폴리오 내 모든 웹사이트의 배너들은 제가 직접 제작한 배너들입니다. <br> 포토샵, 일러스트, 피그마를 활용하여 다양한 비율과 용도의 배너/카드뉴스 제작이 가능합니다.</p>
+            <div class="cf">
+              <ul class="cf">
+                <li><img src="./img/hat_thum.jpg" alt="준비중♡" class="game"></li>
+                <li><img src="./img/pillow_thum.jpg" alt="pillow" class="pillow"></li>
+                <li><img src="./img/brush_thum.jpg" alt="brush" class="brush"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide banner designslidecont">
+            <h1>Editorial Design</h1>
+            <p>포트폴리오 내 모든 웹사이트의 배너들은 제가 직접 제작한 배너들입니다. <br> 포토샵, 일러스트, 피그마를 활용하여 다양한 비율과 용도의 배너/카드뉴스 제작이 가능합니다.</p>
+            <div class="cf">
+              <ul class="cf">
+                <li><img src="./img/hat_thum.jpg" alt="준비중♡" class="game"></li>
+                <li><img src="./img/hat_thum.jpg" alt="준비중♡" class="game"></li>
+                <li><img src="./img/hat_thum.jpg" alt="준비중♡" class="game"></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+  
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination1"></div>
+  
+        <!-- Add Arrows -->
+        <div class="swiper-button-next next1"></div>
+        <div class="swiper-button-prev prev1"></div>
+      </div>
+    </div>
+    <div id="contact" class="page"></div>
+  </div>
+
+
+</body>
+
+</html>
