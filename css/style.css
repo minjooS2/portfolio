@@ -22,7 +22,7 @@ a {text-decoration: none;}
 body {
     font-size: 16px;
     font-family: Pretendard, '맑은 고딕', 돋움; 
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     color: #223a31;
 }
 
@@ -30,6 +30,11 @@ body {
     content: ''; 
     display: block;
     clear: both;
+}
+
+.stop-scroll{
+    height: 100%;
+    overflow: hidden;
 }
 
 
@@ -260,7 +265,7 @@ ul.nav > li > a {
     float: left;
     width: 220px;
     margin-right: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     /* box-shadow: 0 0 5px green inset; */
 }
 
@@ -682,30 +687,6 @@ ul.nav > li > a {
     display: none;
 }
 
-
-
-#designProject #namsung img,
-#designProject #pizza img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 800px;
-    height: 800px;
-    transform: translate(-50%, -50%);
-}
-
-
-#designProject #namsung button,
-#designProject #pizza button {
-    position: absolute;
-    right: 510px;
-    top: 75px;
-    border: 0;
-    background: none;
-    color: white;
-    font-size: 30px;
-}
-
 #game > div {
     position: absolute;
     top: 50%;
@@ -739,7 +720,8 @@ ul.nav > li > a {
     font-size: 30px;
 }
 
-#pillow > div {
+#pillow > div,
+#brush > div {
     position: relative;
     width: 700px;
     height: 700px;
@@ -748,11 +730,26 @@ ul.nav > li > a {
     margin-top: 90px;
 }
 
-#pillow > div img {
+#namsung > div,
+#pizza > div {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+#pillow > div img,
+#brush > div img,
+#namsung > div img,
+#pizza > div img {
     width: 100%;
 }
 
-#pillow button {
+#pillow button,
+#brush button,
+#namsung button,
+#pizza button {
     position: absolute;
     right: 20px;
     top: 20px;
@@ -760,6 +757,11 @@ ul.nav > li > a {
     background: none;
     color: #666;
     font-size: 30px;
+}
+
+.borderli {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
 }
 
 

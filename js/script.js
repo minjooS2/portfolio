@@ -60,21 +60,6 @@ $(function(){
 		},
 	});
 
-	/* 호버시 스크롤링 */
-
-	/* $('.PCmockup > .frame').hover(function(){
-
-    var ah = $(this).find('a').innerHeight(); // .innerHeight() : 대상의 Height + Padding
-    var img = $(this).find('img');
-    var imgh = $(this).find('img').innerHeight();
-
-    img.stop().animate({top:ah-imgh},8000)
-
-  }, function(){ // hover 해제 → top : 0
-    var img = $(this).find('img');
-    img.stop().animate({top:0}, 5000);
-  })
- */
 
 	$('.mobileMockup >.frame').hover(function(){
 
@@ -91,8 +76,9 @@ $(function(){
 
 
 
+
 	//마우스 휠 이벤트
-	$("div.page").each(function () { 
+	$("div.page").each(function scrollworks() { 
 		$(this).on("mousewheel DOMMouseScroll", function (e) { 
 			var delta = 0;
 			if (!event) event = window.event; 
@@ -134,14 +120,15 @@ $(function(){
     var htmlNum = 90;
     var cssNum = 90;
     var javascriptNum = 80;
-    var jqueryNum = 90;
-    var photoshopNum = 95;
+    var jqueryNum = 80;
+    var photoshopNum = 90;
     var illustratorNum = 100;
-		var indesignNum = 100;
+		var indesignNum = 90;
 		var figmaNum = 90;
 		var reactNum = 60;
 		var gitNum = 60;
 		var primiereNum = 60;
+		var bootstrapNum = 80;
     var max = 100;
     var duration = 1500;
 
@@ -257,15 +244,15 @@ $(function(){
       }
     })
 
-		/* react */
+		/* bootstrap */
 
-		$('#primiere_bar').stop().animate({
-      'right':100-(gitNum/max*100)+'%',
+		$('#bootstrap_bar').stop().animate({
+      'right':100-(bootstrapNum/max*100)+'%',
     },{
       'duration':duration,
       'easing':'easeInOutQuart',
       'progress': function(animation,progress,msRemaining){
-        $('#primiere_cnt').text(Math.round(primiereNum*progress)+'%');
+        $('#bootstrap_cnt').text(Math.round(bootstrapNum*progress)+'%');
       }
     })
 
@@ -277,28 +264,38 @@ $(function(){
 
    $('.closeBtn').click(function(){
      $(this).parents('.designModal').hide()
+
+
    });
 
 
    $('.namsung').click(function(){
     $('#namsung').show();
+    $('body').addClass('stop-scroll');
    });
 
    $('.pizza').click(function(){
     $('#pizza').show();
+    $('body').addClass('stop-scroll');
+
    });
 
    $('.game').click(function(){
     $('#game').show();
+    $('body').addClass('stop-scroll');
    });
 
-   $('.pillow').click(function(){
+   /* $('.pillow').click(function(){
     $('#pillow').show();
+    $('body').addClass('stop-scroll');
    });
 
    $('.brush').click(function(){
     $('#brush').show();
+    $('body').addClass('stop-scroll');
    });
+ */
+   
 
 
 
